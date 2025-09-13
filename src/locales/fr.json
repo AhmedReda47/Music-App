@@ -1,0 +1,104 @@
+{
+  "home": {
+    "listen": "Écoutez de la bonne musique !",
+    "title": "Plongez dans un monde infini de mélodies et de chansons, spécialement conçues pour s'adapter à chaque instant de votre quotidien. Découvrez de nouveaux artistes, créez des playlists qui reflètent votre humeur et partagez facilement vos morceaux préférés avec vos amis. Laissez chaque note raconter une histoire unique et devenir la bande-son idéale pour votre journée.",
+    "logoText": "Musique",
+    "about": "À propos",
+    "manage": "Gérer",
+    "logOut": "Déconnexion",
+    "logIn": "Se connecter",
+    "register": "S'inscrire",
+    "songs": "chansons",
+    "loading": "Chargement de plus de chansons...",
+    "no": "Plus de chansons à charger 🎵"
+  },
+  "about": {
+    "title": "À propos de nous",
+    "subtitle": "Découvrez l'histoire derrière notre plateforme musicale et la technologie qui alimente votre voyage musical.",
+    "our_story": "Notre Histoire",
+    "mission_title": "Notre Mission",
+    "mission_description": "Créer une expérience musicale fluide qui connecte les artistes et les auditeurs grâce à une technologie innovante, en favorisant une communauté mondiale d'amoureux de la musique.",
+    "vision_title": "Notre Vision",
+    "vision_description": "Être la plateforme leader où les créateurs de musique et les passionnés se réunissent pour partager, découvrir et célébrer le langage universel de la musique.",
+    "features_title": "Ce que nous offrons",
+    "feature1_title": "Streaming Musical",
+    "feature1_description": "Streaming audio de haute qualité avec des playlists personnalisées et des recommandations.",
+    "feature2_title": "Communauté",
+    "feature2_description": "Connectez-vous avec d'autres amoureux de la musique, partagez vos morceaux préférés et découvrez de nouveaux artistes.",
+    "feature3_title": "Upload Facile",
+    "feature3_description": "Interface simple de glisser-déposer pour télécharger et gérer votre collection musicale.",
+    "tech_title": "Construit avec une Technologie Moderne"
+  },
+  "auth": {
+    "account": "Votre compte",
+    "login": "Connexion",
+    "register": "Inscription"
+  },
+  "login": {
+    "email": "Email",
+    "password": "Mot de passe",
+    "email_placeholder": "Entrez votre email",
+    "password_placeholder": "Mot de passe",
+    "submit": "Soumettre",
+    "waiting": "Veuillez patienter ! Nous vous connectons.",
+    "success": "Succès ! Vous êtes maintenant connecté.",
+    "invalid": "Détails de connexion invalides."
+  },
+  "register": {
+    "name": "Nom",
+    "email": "Email",
+    "age": "Âge",
+    "password": "Mot de passe",
+    "confirm_password": "Confirmer le mot de passe",
+    "country": "Pays",
+    "name_placeholder": "Entrez votre nom",
+    "email_placeholder": "Entrez votre email",
+    "password_placeholder": "Mot de passe",
+    "confirm_password_placeholder": "Confirmer le mot de passe",
+    "submit": "Soumettre",
+    "accept": " J'accepte les conditions générales de la musique {0}",
+    "tos": "Conditions d'utilisation",
+    "waiting": "Veuillez patienter ! Votre compte est en cours de création.",
+    "success": "Succès ! Votre compte a été créé.",
+    "email_in_use": "Cet email est déjà enregistré. Veuillez utiliser un email différent ou essayer de vous connecter.",
+    "weak_password": "Le mot de passe est trop faible. Veuillez choisir un mot de passe plus fort.",
+    "invalid_email": "Veuillez entrer une adresse email valide.",
+    "failed": "Échec de l'inscription : {message}"
+  },
+  "song": {
+    "comment_count": "Sans commentaires | 1 Commentaire | {count} Commentaires",
+    "submit": "Soumettre",
+    "latest": "Plus récent",
+    "oldest": "Plus ancien",
+    "placeholder": "Votre commentaire ici...",
+    "by": "par",
+    "comment_waiting": "Veuillez patienter ! Votre commentaire est en cours de soumission",
+    "comment_success": "Commentaire ajouté !",
+    "comment_error": "Erreur : Impossible de soumettre le commentaire"
+  },
+  "manage": {
+    "my_song": "Mes chansons",
+    "unsaved_warning": "Vous avez des modifications non sauvegardées. Êtes-vous sûr de vouloir partir ?"
+  },
+  "upload": {
+    "upload": "Télécharger",
+    "drop": "Déposez vos fichiers ici",
+    "login_required": "Veuillez vous connecter pour télécharger des fichiers"
+  },
+  "player": {
+    "by": "par"
+  },
+  "composition": {
+    "song_title": "Titre de la chanson",
+    "genre": "Genre",
+    "song_title_placeholder": "Entrez le titre de la chanson",
+    "genre_placeholder": "Entrez le genre",
+    "submit": "Soumettre",
+    "go_back": "Retour",
+    "updating": "Veuillez patienter ! Mise à jour des informations de la chanson.",
+    "error": "Quelque chose s'est mal passé ! Réessayez plus tard",
+    "success": "Succès !",
+    "delete_success": "Chanson supprimée avec succès !",
+    "delete_failed": "Échec de la suppression de la chanson : {message}"
+  }
+}

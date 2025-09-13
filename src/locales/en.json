@@ -1,0 +1,104 @@
+{
+  "home": {
+    "listen": "Listen to Great Music !",
+    "title": "Immerse yourself in an endless world of melodies and songs, specially curated to fit every moment of your daily life. Discover new artists, create playlists that express your mood, and easily share your favorite music with friends. Let every note tell a unique story and become the perfect soundtrack for your day.",
+    "logoText": "Music",
+    "about": "About",
+    "manage": "Manage",
+    "logOut": "Logout",
+    "logIn": "Login",
+    "register": "Register",
+    "songs": "Songs",
+    "loading": "Loading more songs...",
+    "no": "No more songs to load 🎵"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Discover the story behind our music platform and the technology that powers your musical journey.",
+    "our_story": "Our Story",
+    "mission_title": "Our Mission",
+    "mission_description": "To create a seamless music experience that connects artists and listeners through innovative technology, fostering a global community of music lovers.",
+    "vision_title": "Our Vision",
+    "vision_description": "To be the leading platform where music creators and enthusiasts come together to share, discover, and celebrate the universal language of music.",
+    "features_title": "What We Offer",
+    "feature1_title": "Music Streaming",
+    "feature1_description": "High-quality audio streaming with personalized playlists and recommendations.",
+    "feature2_title": "Community",
+    "feature2_description": "Connect with fellow music lovers, share your favorite tracks, and discover new artists.",
+    "feature3_title": "Easy Upload",
+    "feature3_description": "Simple drag-and-drop interface for uploading and managing your music collection.",
+    "tech_title": "Built With Modern Technology"
+  },
+  "auth": {
+    "account": "Your Account",
+    "login": "Login",
+    "register": "Register"
+  },
+  "login": {
+    "email": "Email",
+    "password": "Password",
+    "email_placeholder": "Enter Email",
+    "password_placeholder": "Password",
+    "submit": "Submit",
+    "waiting": "Please wait! We are logging you in.",
+    "success": "Success! You are now logged in.",
+    "invalid": "Invalid login details."
+  },
+  "register": {
+    "name": "Name",
+    "email": "Email",
+    "age": "Age",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "country": "Country",
+    "name_placeholder": "Enter Name",
+    "email_placeholder": "Enter Email",
+    "password_placeholder": "Password",
+    "confirm_password_placeholder": "Confirm Password",
+    "submit": "Submit",
+    "accept": " I accept Music's {0}",
+    "tos": "Terms of Service",
+    "waiting": "Please wait! Your account is being created.",
+    "success": "Success! Your account has been created.",
+    "email_in_use": "This email is already registered. Please use a different email or try logging in.",
+    "weak_password": "Password is too weak. Please choose a stronger password.",
+    "invalid_email": "Please enter a valid email address.",
+    "failed": "Registration failed: {message}"
+  },
+  "song": {
+    "comment_count": "No Comments | 1 Comment | {count} Comments",
+    "submit": "Submit",
+    "latest": "Latest",
+    "oldest": "Oldest",
+    "placeholder": "Your comment here...",
+    "by": "by",
+    "comment_waiting": "Please wait! Your comment is being submitted",
+    "comment_success": "Comment added!",
+    "comment_error": "Error: Could not submit comment"
+  },
+  "manage": {
+    "my_song": "My Songs",
+    "unsaved_warning": "You have unsaved changes. Are you sure you want to leave?"
+  },
+  "upload": {
+    "upload": "Upload",
+    "drop": "Drop your files here",
+    "login_required": "Please log in to upload files"
+  },
+  "player": {
+    "by": "by"
+  },
+  "composition": {
+    "song_title": "Song Title",
+    "genre": "Genre",
+    "song_title_placeholder": "Enter Song Title",
+    "genre_placeholder": "Enter Genre",
+    "submit": "Submit",
+    "go_back": "Go Back",
+    "updating": "Please wait! Updating song info.",
+    "error": "Something went wrong! Try again later",
+    "success": "Success!",
+    "delete_success": "Song deleted successfully!",
+    "delete_failed": "Failed to delete song: {message}"
+  }
+}
