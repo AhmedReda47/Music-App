@@ -1,28 +1,40 @@
 <template>
   <main>
     <!-- Music Header -->
-    <section class="w-full mb-8 py-14 text-center text-white relative px-20">
-      <div
-        class="absolute inset-0 w-full h-full box-border bg-contain music-bg"
-        style="background-image: url(/assets/img/song-header.png)"
-      ></div>
-      <div class="container mx-auto flex items-center">
-        <button
-          @click.prevent="playing ? toggleAudio() : newSong(song)"
-          type="button"
-          class="z-50 h-24 w-24 text-3xl bg-white text-black rounded-full focus:outline-none"
-        >
-          <i class="fas" :class="{ 'fa-play': !playing, 'fa-pause': playing }"></i>
-        </button>
-        <div class="z-50 text-left ml-8">
-          <div class="text-3xl font-bold">{{ song.modified_name }}</div>
-          <div>{{ song.genre }}</div>
-          <div class="song-price">
-            {{ $n(1, 'currency') }}
-          </div>
-        </div>
+    <section
+  class="w-full mb-8 py-14 text-center text-white relative px-6 sm:px-10 md:px-20"
+>
+  <!-- Background -->
+  <div
+    class="absolute inset-0 w-full h-full bg-cover bg-center music-bg"
+    style="background-image: url(/assets/img/song-header.png)"
+  ></div>
+
+  <!-- Overlay for readability -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- Content -->
+  <div class="container mx-auto flex flex-col sm:flex-row items-center relative z-50">
+    <button
+      @click.prevent="playing ? toggleAudio() : newSong(song)"
+      type="button"
+      class="h-20 w-20 sm:h-24 sm:w-24 text-2xl sm:text-3xl bg-white text-black rounded-full focus:outline-none flex items-center justify-center"
+    >
+      <i class="fas" :class="{ 'fa-play': !playing, 'fa-pause': playing }"></i>
+    </button>
+
+    <div class="text-left mt-6 sm:mt-0 sm:ml-8">
+      <div class="text-2xl sm:text-3xl font-bold">
+        {{ song.modified_name }}
       </div>
-    </section>
+      <div class="text-sm sm:text-base">{{ song.genre }}</div>
+      <div class="song-price mt-2 text-center md:text-left">
+        {{ $n(1, 'currency') }}
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Form -->
     <section class="container mx-auto mt-6 px-4 md:px-8 lg:px-20" id="comments">
