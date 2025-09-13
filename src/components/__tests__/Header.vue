@@ -13,10 +13,7 @@
         </router-link>
 
         <!-- Hamburger (small screens only) -->
-        <button
-          @click="isMenuOpen = !isMenuOpen"
-          class="text-white md:hidden focus:outline-none"
-        >
+        <button @click="isMenuOpen = !isMenuOpen" class="text-white md:hidden focus:outline-none">
           <i v-if="!isMenuOpen" class="fa fa-bars text-2xl"></i>
           <i v-else class="fa fa-times text-2xl"></i>
         </button>
@@ -61,7 +58,9 @@
               </li>
             </template>
           </ul>
-          <ul class="ms-auto">
+
+          <!-- Locale + Install button -->
+          <ul class="ms-auto flex items-center gap-3">
             <li>
               <a
                 class="px-1 md:px-2 text-white text-sm md:text-base"
@@ -71,16 +70,16 @@
                 {{ currentLocale }}
               </a>
             </li>
+            <li>
+              <InstallButton />
+            </li>
           </ul>
         </div>
       </nav>
 
       <!-- Mobile Menu -->
       <transition name="slide-fade">
-        <div
-          v-if="isMenuOpen"
-          class="md:hidden bg-gray-800 text-white px-6 py-4 space-y-3"
-        >
+        <div v-if="isMenuOpen" class="md:hidden bg-gray-800 text-white px-6 py-4 space-y-3">
           <ul class="flex flex-col space-y-2">
             <li>
               <router-link
@@ -92,11 +91,7 @@
               </router-link>
             </li>
             <li v-if="!userStore.userLoggedIn">
-              <a
-                class="block text-sm"
-                href="#"
-                @click.prevent="toggleAuthModal"
-              >
+              <a class="block text-sm" href="#" @click.prevent="toggleAuthModal">
                 {{ $t('home.logIn') }} / {{ $t('home.register') }}
               </a>
             </li>
@@ -111,24 +106,19 @@
                 </router-link>
               </li>
               <li>
-                <a
-                  class="block text-sm"
-                  href="#"
-                  @click.prevent="signOut"
-                >
+                <a class="block text-sm" href="#" @click.prevent="signOut">
                   {{ $t('home.logOut') }}
                 </a>
               </li>
             </template>
           </ul>
-          <div class="pt-3 border-t border-gray-600">
-            <a
-              class="block text-sm"
-              href="#"
-              @click.prevent="changeLocale"
-            >
+
+          <!-- Locale + Install button -->
+          <div class="pt-3 border-t border-gray-600 flex justify-between items-center">
+            <a class="block text-sm" href="#" @click.prevent="changeLocale">
               {{ currentLocale }}
             </a>
+            <InstallButton />
           </div>
         </div>
       </transition>
@@ -140,13 +130,15 @@
 import { mapStores } from 'pinia'
 import useModalStore from '@/stores/modal'
 import { useUserStore } from '@/stores/user'
+import InstallButton from '../InstallButton.vue'
 
 export default {
   name: 'Header',
+  components: { InstallButton },
   data() {
     return {
       selectedLocale: this.$i18n.locale,
-      isMenuOpen: false, // <-- للتحكم في إظهار/إخفاء المينيو
+      isMenuOpen: false,
     }
   },
   watch: {
