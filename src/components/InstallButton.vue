@@ -5,6 +5,10 @@
     class="px-4 py-2 bg-green-500 text-white rounded-lg"
   >
     Install App
+
+
+
+    
   </button>
 </template>
 
